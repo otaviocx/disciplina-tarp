@@ -33,7 +33,7 @@ entradas = []
 for i in range(0, 9):
     entradas.append(get_digit(i))
 
-layerImg1 = Layer("Layer 1", 0.1, np.random.random_sample((400, 4)), entradas)
+layerImg1 = Layer("Layer 1", 0.1, np.random.random_sample((400, 10)), entradas)
 for i in range(0, 5000):
     print("============= Epoca", i+1, "=============")
     erro = layerImg1.run()
